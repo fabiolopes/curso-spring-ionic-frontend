@@ -16,6 +16,7 @@ import { AuthInterceptorProvider } from '../interceptors/auth-interceptor';
 import { ProdutoService } from '../services/domain/produto.service';
 import { CartService } from '../services/domain/cart.service';
 import { PedidoService } from '../services/domain/pedido.service';
+import { LoadingService } from '../services/loading.service';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { PedidoService } from '../services/domain/pedido.service';
     AuthInterceptorProvider,
     ErrorInterceptorProvider,
     AuthService,
+    LoadingService,
     StorageService,
     ClienteService,
     ProdutoService,
